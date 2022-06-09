@@ -1,4 +1,12 @@
 rootProject.name = 'SampleApp'
+
+include ":arcore_client", ":ARPresto", ":unityandroidpermissions", ":UnityARCore", ":unityLibrary"
+project(":arcore_client").projectDir = file("../node_modules/jewelry-ar-react-native-sdk/android/unity_libs/arcore_client")
+project(":ARPresto").projectDir = file("../node_modules/jewelry-ar-react-native-sdk/android/unity_libs/ARPresto")
+project(":unityandroidpermissions").projectDir = file("../node_modules/jewelry-ar-react-native-sdk/android/unity_libs/unityandroidpermissions")
+project(":UnityARCore").projectDir = file("../node_modules/jewelry-ar-react-native-sdk/android/unity_libs/UnityARCore")
+project(":unityLibrary").projectDir = file("../node_modules/jewelry-ar-react-native-sdk/android/unity_libs/unityLibrary")
+
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'
 includeBuild('../node_modules/react-native-gradle-plugin')
