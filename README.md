@@ -1,4 +1,4 @@
-## After the checkout:
+## After checkout:
 
 ### 1. (Re-)install the latest npm package from the cloud:
 ```
