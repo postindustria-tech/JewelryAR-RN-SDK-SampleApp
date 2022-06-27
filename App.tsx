@@ -23,7 +23,7 @@ const ArScreen = ({ navigation, route }) => {
   return (
     <ArView
       style={{ position: 'absolute', left: 0, right: 0, top: 0, bottom: 0 }}
-      host="https://stage-api-ar.postindustria.com/v1"
+      apiURL="https://stage-api-ar.postindustria.com/v1"
       apiKey="spWyH9aA-OEL-Bl27KHAeQ"
       modelId={route.params.modelId}
     />
