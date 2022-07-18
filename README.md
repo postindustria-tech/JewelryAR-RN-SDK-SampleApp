@@ -47,15 +47,33 @@ pod install
 
 ### Android
 
+#### - Create destination folders
+
 ```bash
 mkdir -p android/app/src/main/assets/
 mkdir -p android/app/src/main/res/
+```
+
+#### - Create JS bundle (`index.android.bundle`)
+
+```bash
 npx react-native bundle --platform android --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
 ```
 
+If the command fails, check whether the destination paths exist in the filesystem.
+
 ### iOS
+
+#### - Create the destination folder
 
 ```bash
 mkdir -p ios/SampleApp/index
+```
+
+#### - Create JS bundle (`main.jsbundle`)
+
+```bash
 npx react-native bundle --entry-file index.js --bundle-output ios/SampleApp/index/main.jsbundle --platform ios
 ```
+
+If the command fails, check whether the destination paths exist in the filesystem.
