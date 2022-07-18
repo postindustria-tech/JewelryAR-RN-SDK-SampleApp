@@ -36,11 +36,14 @@ npm install "https://pi-ar-sdk-public.storage.googleapis.com/jewelry-ar-react-na
 ### 2. [iOS] Install pods
 
 ```bash
-cd iOS
+cd ios
 pod install
 ```
 
 ## Preparing to run the debug build onto device (bundling JS)
+
+⚠️ Run the following commands at the **root folder** of the project.
+⚠️ NOT inside `android`/`ios` !!!
 
 ### Android
 
