@@ -26,7 +26,7 @@ See [[Downloading and installing Node.js and npm]](https://docs.npmjs.com/downlo
 
 ## Installing the dependencies
 
-### 1. (Re-)install the latest npm package from the cloud:
+### 1. (Re-)install the latest npm package from the cloud
 
 ```bash
 npm remove jewelry-ar-react-native-sdk
@@ -37,7 +37,22 @@ npm install "https://pi-ar-sdk-public.storage.googleapis.com/jewelry-ar-react-na
 
 ```bash
 cd ios
-pod install
+pod install --repo-update
+```
+
+❓ If you get and error like
+
+```text
+Invalid `Podfile` file: cannot load such file
+```
+
+➡️ try
+
+```bash
+cd ..
+npm audit fix
+cd ios
+pod update
 ```
 
 ## Preparing to run the debug build onto device (bundling JS)
