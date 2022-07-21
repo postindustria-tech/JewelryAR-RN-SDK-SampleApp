@@ -1,8 +1,16 @@
 # Jewelry AR SDK - Sample App
 
-## Requirements
+:warning: All the commands below are written in BASH. If you are using [[Git for Windows]](https://gitforwindows.org/), please run them from your emulated Git BASH shell.
+
+## Requirements (for React Native)
+
+See [[Setting up the development environment]](https://reactnative.dev/docs/environment-setup).
+
+## Requirements (for Jewelry AR SDK)
 
 ### - `npm` (`8.7.0` or newer)
+
+:warning: We have encountered issues while attempting to run Sample App with an outdated version of `npm` (v. `6.14.15`). So please make sure you have an up-to-date one.
 
 Check with:
 
@@ -55,7 +63,21 @@ cd ios
 pod update
 ```
 
-## Preparing to run the debug build onto device (bundling JS)
+## Preparing to run the debug build on device (bundling JS)
+
+The steps mentioned below are supposed to enable the autonomy of debug builds:
+
+- By default, React Native relies on [Metro](https://facebook.github.io/metro/) to bundle and transfer the files from development machine onto device via WiFi in run time.
+
+- On iOS, Metro is automatically started when the application is run in Debug scheme from Xcode, so the steps below _might_ be unnecessary.
+
+- When built with Release scheme, the files get properly bundled into the final IPA/APK, so the steps below _are_ unnecessary.
+
+- For running to Android with Debug scheme from Android Studio, the steps below are _usually_ necessary.
+
+Otherwise, the JS bundle in the resulting application archive/bundle will be outdated (or not exist at all).
+
+Also, non-existence of `main.jsbundle` _might_ cause a compilation failure of Debug scheme on iOS.
 
 ⚠️ Run the following commands at the **root folder** of the project.
 
@@ -93,3 +115,19 @@ npx react-native bundle --entry-file index.js --bundle-output ios/SampleApp/inde
 ```
 
 If the command fails, check whether the destination paths exist in the filesystem.
+
+## Running the app
+
+### Running On Simulator
+
+:warning: iOS Simulator does not support ARKit. The app will crash as soon as you reach the screen with AR experience.
+
+See React Native documentation on running the first app:
+
+- [iOS + macOS](https://reactnative.dev/docs/running-on-device#3-build-and-run-your-app)
+- [Android + macOS](https://reactnative.dev/docs/running-on-device#3-run-your-app)
+- [Android + Windows](https://reactnative.dev/docs/running-on-device#3-run-your-app-1)
+
+### Running On Device
+
+See [[Running On Device]](https://reactnative.dev/docs/running-on-device).
