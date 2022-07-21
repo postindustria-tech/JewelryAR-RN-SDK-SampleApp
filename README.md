@@ -1,6 +1,12 @@
 # Jewelry AR SDK - Sample App
 
-:warning: All the commands below are written in BASH. If you are using [[Git for Windows]](https://gitforwindows.org/), please run them from your emulated Git BASH shell.
+:warning: All the commands below are written in BASH with Mac OS in mind. Some of them might not work in Windows `cmd` console.
+
+If you are on Windows, please consider (re-)running them in:
+
+- emulated Git BASH shell (if you are using [[Git for Windows]](https://gitforwindows.org/))
+- [[PowerShell]](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2)
+- [[WSL]](https://docs.microsoft.com/en-us/windows/wsl/install) (if you are on Windows 10+)
 
 ## Requirements (for React Native)
 
@@ -120,7 +126,7 @@ If the command fails, check whether the destination paths exist in the filesyste
 
 ### Running On Simulator
 
-:warning: iOS Simulator does not support ARKit. The app will crash as soon as you reach the screen with AR experience.
+:warning: iOS Simulator does not support ARKit. The application will crash as soon as you reach the screen with AR experience.
 
 See React Native documentation on running the first app:
 
