@@ -10,12 +10,26 @@ const Stack = createNativeStackNavigator();
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <Button
-      title="Open AR View"
-      onPress={() =>
-        navigation.navigate('AR', { modelId: '73' })
-      }
-    />
+    <View>
+      <Button
+        title="Open AR View (with ID)"
+        onPress={() =>
+          navigation.navigate('AR', { modelId: '73' })
+        }
+      />
+      <Button
+        title="Open AR View (with Name)"
+        onPress={() =>
+          navigation.navigate('AR', { modelName: 'loreto' })
+        }
+      />
+      <Button
+        title="Open AR View (with CustomID)"
+        onPress={() =>
+          navigation.navigate('AR', { modelCustomId: 'CID324895' })
+        }
+      />
+    </View>
   );
 };
 
@@ -26,6 +40,8 @@ const ArScreen = ({ navigation, route }) => {
       apiURL="https://stage-api-ar.postindustria.com/v1"
       apiKey="spWyH9aA-OEL-Bl27KHAeQ"
       modelId={route.params.modelId}
+      modelCustomId={route.params.modelCustomId}
+      modelName={route.params.modelName}
     />
   );
 };
