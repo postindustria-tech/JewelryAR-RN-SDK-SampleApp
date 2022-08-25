@@ -4819,10 +4819,10 @@
   "resolved" "https://registry.npmjs.org/jetifier/-/jetifier-1.6.8.tgz"
   "version" "1.6.8"
 
-"jewelry-ar-react-native-sdk@https://pi-ar-sdk-public.storage.googleapis.com/jewelry-ar-react-native-sdk-1.18.0.tgz":
-  "integrity" "sha512-A60g5jQyl6vdo2wCGj9ypDvktp7pzsJAynRb2ubQsyqmRtlM3N6H6rryNNqIHUPUj8eFuBCaV+8HGkeIwLYT4g=="
-  "resolved" "https://pi-ar-sdk-public.storage.googleapis.com/jewelry-ar-react-native-sdk-1.18.0.tgz"
-  "version" "1.18.0"
+"jewelry-ar-react-native-sdk@https://pi-ar-sdk-public.storage.googleapis.com/jewelry-ar-react-native-sdk-1.20.0.tgz":
+  "integrity" "sha512-m3nC0o/ufLRkqdHO2o86CjPm3VX+aCOVWbMBP/OEhbh6quHYRGu2nAyp+7rwq9boz4ZjF9ne2cdF1c+S55Ve7Q=="
+  "resolved" "https://pi-ar-sdk-public.storage.googleapis.com/jewelry-ar-react-native-sdk-1.20.0.tgz"
+  "version" "1.20.0"
 
 "joi@^17.2.1":
   "integrity" "sha512-OX5dG6DTbcr/kbMFj0KGYxuew69HPcAE3K/sZpEV2nP6e/j/C0HV+HNiBPCASxdx5T7DMoa0s8UeHWMnb6n2zw=="
@@ -6549,9 +6549,9 @@
     "queue-microtask" "^1.2.2"
 
 "rxjs@*":
-  "integrity" "sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw=="
-  "resolved" "https://registry.npmjs.org/rxjs/-/rxjs-7.5.5.tgz"
-  "version" "7.5.5"
+  "integrity" "sha512-dnyv2/YsXhnm461G+R/Pe5bWP41Nm6LBXEYWI6eiFP4fiwx6WRI/CD0zbdVAudd9xwLEF2IDcKXLHit0FYjUzw=="
+  "resolved" "https://registry.npmjs.org/rxjs/-/rxjs-7.5.6.tgz"
+  "version" "7.5.6"
   dependencies:
     "tslib" "^2.1.0"
 
